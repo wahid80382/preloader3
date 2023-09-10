@@ -1,0 +1,85 @@
+/* common css start */
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+Ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/* common css end */
+/* preloader css start */
+#preloader{
+    position: fixed;
+    background-color:#ffffff;
+    inset: 0;
+    z-index: 999999999;    
+    justify-content: center;
+    align-items: center;
+}
+/* preloader css end */
+/* nav css start */
+nav{
+    background-color: #02918c;
+    position: relative;
+
+}
+#nav.fixed{
+    position: fixed;
+    top:0;
+    width: 100%;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes anim {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 0px;
+    }
+    
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: inline-block;
+}
+nav ul li a{
+    justify-content: flex-end;
+    color: #ffffff;
+    font-weight:800 ;
+    font-size: 16px;
+    padding:26px 25.5px;
+    display: inline-block;
+}
+/* nav css end */
+/* banner css start  */
+#banner{
+    width:1280px;
+    height:726px;
+    background-color:black;
+    background-image: url(../image/banner.jpg);
+}
+
+/* banner css end */
